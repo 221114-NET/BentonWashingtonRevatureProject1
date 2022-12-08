@@ -25,7 +25,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/BusinessLayer.csproj": {
+                "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/BusinessLayer.csproj"
+              },
+              "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj": {
+                "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -62,6 +69,176 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/BusinessLayer.csproj",
+        "packagesPath": "/Users/bentonwashington/.nuget/packages/",
+        "outputPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/BusinessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bentonwashington/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj": {
+                "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj"
+              },
+              "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/RepoLayer.csproj": {
+                "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/RepoLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj",
+        "projectName": "ModelsLayer",
+        "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj",
+        "packagesPath": "/Users/bentonwashington/.nuget/packages/",
+        "outputPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bentonwashington/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/RepoLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/RepoLayer.csproj",
+        "projectName": "RepoLayer",
+        "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/RepoLayer.csproj",
+        "packagesPath": "/Users/bentonwashington/.nuget/packages/",
+        "outputPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bentonwashington/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj": {
+                "projectPath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ModelsLayer/ModelsLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

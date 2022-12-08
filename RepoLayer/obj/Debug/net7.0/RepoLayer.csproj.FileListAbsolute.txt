@@ -1,0 +1,15 @@
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/bin/Debug/net7.0/RepoLayer.deps.json
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/bin/Debug/net7.0/RepoLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/bin/Debug/net7.0/RepoLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/bin/Debug/net7.0/ModelsLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/bin/Debug/net7.0/ModelsLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.csproj.AssemblyReference.cache
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.AssemblyInfoInputs.cache
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.AssemblyInfo.cs
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.csproj.CoreCompileInputs.cache
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.csproj.CopyComplete
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/refint/RepoLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/RepoLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/RepoLayer/obj/Debug/net7.0/ref/RepoLayer.dll

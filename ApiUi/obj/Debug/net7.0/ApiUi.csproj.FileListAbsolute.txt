@@ -31,3 +31,9 @@
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/obj/Debug/net7.0/ApiUi.pdb
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/obj/Debug/net7.0/ApiUi.genruntimeconfig.cache
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/obj/Debug/net7.0/ref/ApiUi.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/BusinessLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ModelsLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/RepoLayer.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ModelsLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/BusinessLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/RepoLayer.pdb
