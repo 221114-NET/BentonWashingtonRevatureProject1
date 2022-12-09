@@ -37,3 +37,9 @@
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ModelsLayer.pdb
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/BusinessLayer.pdb
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/RepoLayer.pdb
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/System.Data.SqlClient.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/runtimes/win-arm64/native/sni.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/runtimes/win-x64/native/sni.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/runtimes/win-x86/native/sni.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
