@@ -26,7 +26,7 @@ namespace RepoLayer
             SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             //configure the SQL query along with the connection object
-            SqlCommand command = new SqlCommand($"INSERT INTO Users (Email, UserPassword, Manager) VALUES (@Email,@UserPassword,0);", conn);
+            SqlCommand command = new SqlCommand($"INSERT INTO Users (Email, UserPassword, Manager) VALUES (@Email,@UserPassword,'false');", conn);
 
             //Open the Connection - you can access the SqlConnection object directly or through the SqlCommand obj!
             await conn.OpenAsync();
@@ -108,16 +108,13 @@ namespace RepoLayer
         }
 
             public async Task<Tickets> UpdateTicket (Tickets t){
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             SqlCommand command = new SqlCommand($"UPDATE Tickets SET TickStatus = @TickStatus WHERE TickID = @TickID;", conn);
 
             command.Connection.Open();
 
-            command.Parameters.AddWithValue("@TickType", t.TickID);
+            command.Parameters.AddWithValue("@TickID", t.TickID);
             command.Parameters.AddWithValue("@TickStatus", t.TickStatus);
             int rowsAffected = await command.ExecuteNonQueryAsync();
 
@@ -154,7 +151,7 @@ namespace RepoLayer
             public async Task<List<Tickets>> GetMyTickets(Tickets t){
             SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-            SqlCommand command = new SqlCommand($"SELECT * FROM Tickets WHERE UserID = '@UserID'", conn);
+            SqlCommand command = new SqlCommand($"SELECT * FROM Tickets WHERE UserID = @UserID", conn);
 
             command.Connection.Open();
             command.Parameters.AddWithValue("@UserID", t.UserID);
@@ -172,19 +169,16 @@ namespace RepoLayer
 
 
             public async Task<Users> UpdateUser (Users u){
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             SqlCommand command = new SqlCommand($"UPDATE Users SET Email = @Email, UserPassword = @UserPassword, Manager = @Manager WHERE UserID = @UserID;", conn);
 
             command.Connection.Open();
 
-            command.Parameters.AddWithValue("@UserID", u.Email);
-            command.Parameters.AddWithValue("@TickStatus", u.UserPassword);
-            command.Parameters.AddWithValue("@TickType", u.Manager);
-            command.Parameters.AddWithValue("@TickStatus", u.UserId);
+            command.Parameters.AddWithValue("@UserID", u.UserId);
+            command.Parameters.AddWithValue("@Email", u.Email);
+            command.Parameters.AddWithValue("@UserPassword", u.UserPassword);
+            command.Parameters.AddWithValue("@Manager", u.Manager);
             int rowsAffected = await command.ExecuteNonQueryAsync();
 
             if (rowsAffected == 1)

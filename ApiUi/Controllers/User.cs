@@ -61,7 +61,7 @@ namespace ApiUi.Controllers
             return t1;
         }
 
-        [HttpPost("GetMyTickets/{UserID}")]
+        [HttpPost("GetMyTickets")]
         public async Task<List<Tickets>> GetMyTickets(Tickets t)
         {
             List<Tickets> t1 = await this._ibus.GetMyTickets(t);
