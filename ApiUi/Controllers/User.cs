@@ -30,9 +30,49 @@ namespace ApiUi.Controllers
         {
             Users u1 = await this._ibus.CreateUser(u);
             return new OkObjectResult(u1);
-           
+        }
 
+        [HttpPost("GetUser")]
+        public async Task<ActionResult<Users>> GetUser(Users u)
+        {
+            Users u1 = await this._ibus.GetUser(u);
+            return new OkObjectResult(u1);
+        }
 
+        [HttpPost("CreateTicket")]
+        public async Task<ActionResult<Users>> CreateTicket(Tickets t)
+        {
+            Tickets t1 = await this._ibus.CreateTicket(t);
+            return new OkObjectResult(t1);
+        }
+
+        [HttpPut("UpdateTicket")]
+        public async Task<ActionResult<Users>> UpdateTicket(Tickets t)
+        {
+            Tickets t1 = await this._ibus.UpdateTicket(t);
+            return new OkObjectResult(t1);
+        }
+
+        [HttpGet("GetPendingTickets")]
+        public async Task<List<Tickets>> GetPendingTickets()
+        {
+            List<Tickets> t1 = new List<Tickets> ();
+            t1 = await this._ibus.GetPendingTickets();
+            return t1;
+        }
+
+        [HttpPost("GetMyTickets/{UserID}")]
+        public async Task<List<Tickets>> GetMyTickets(Tickets t)
+        {
+            List<Tickets> t1 = await this._ibus.GetMyTickets(t);
+            return t1;
+        }
+
+        [HttpPut("UpdateUser")]
+        public async Task<ActionResult<Users>> UpdateUser(Users u)
+        {
+            Users u1 = await this._ibus.UpdateUser(u);
+            return new OkObjectResult(u1);
         }
 
     }

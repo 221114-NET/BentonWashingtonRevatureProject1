@@ -5,7 +5,6 @@
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ApiUi.runtimeconfig.json
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ApiUi.dll
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/ApiUi.pdb
-/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll

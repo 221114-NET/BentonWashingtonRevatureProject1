@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "o5uN8JlXPBqjhY0onTzEeiTjbRG3jBmJ4B7WfBR8wZB9L5/zwrkUCIP4vdKQHSyPopVOq5hMvaR1+p5xU7fBSg==",
+  "dgSpecHash": "n5uk9DaL0nNqNEmxCLDsb1oIed+wsboqznC1Xqo3M+SDF10BGn7wmdZO9vCbLde01eGVvPGB6sByxtnJuRWkpA==",
   "success": true,
   "projectFilePath": "/Users/bentonwashington/Desktop/Revature/Projects/BentonWashingtonRevatureProject1/ApiUi/ApiUi.csproj",
   "expectedPackageFiles": [
-    "/Users/bentonwashington/.nuget/packages/microsoft.aspnetcore.openapi/7.0.0/microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "/Users/bentonwashington/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/bentonwashington/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "/Users/bentonwashington/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/bentonwashington/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/bentonwashington/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/bentonwashington/.nuget/packages/runtime.native.system.data.sqlclient.sni/4.7.0/runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "/Users/bentonwashington/.nuget/packages/runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0/runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

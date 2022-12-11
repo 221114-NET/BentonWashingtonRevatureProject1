@@ -17,7 +17,8 @@ namespace ModelsLayer
             this.UserID = userID;
    
         }
-                public int TickID { get; set; }
+
+        public int TickID { get; set; }
         public string TickType { get; set; }
         public double TickAmount  { get; set; }
         public string TickDescription { get; set; }

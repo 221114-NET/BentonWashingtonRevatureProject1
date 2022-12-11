@@ -18,26 +18,22 @@ namespace RepoLayer
        Task<List<Tickets>> GetPendingTickets();
        Task<List<Tickets>> GetMyTickets(Tickets t);
        Task<Users> UpdateUser(Users u);
-    
     }
     public class Repository : IRepositoryClass
     {
         public async Task<Users> CreateUser (Users u){
             // user ADO.NET to push the data to the DB.
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             //configure the SQL query along with the connection object
-            SqlCommand command = new SqlCommand($"INSERT INTO Users (Email, Password, Manager) VALUES (@Email,@Password,0);", conn);
+            SqlCommand command = new SqlCommand($"INSERT INTO Users (Email, UserPassword, Manager) VALUES (@Email,@UserPassword,0);", conn);
 
             //Open the Connection - you can access the SqlConnection object directly or through the SqlCommand obj!
-            command.Connection.OpenAsync();
+            await conn.OpenAsync();
 
             // add the parameters to the query - do this to prevent Sql Injection
             command.Parameters.AddWithValue("@Email", u.Email);
-            command.Parameters.AddWithValue("@Password", u.UserPassword);
+            command.Parameters.AddWithValue("@UserPassword", u.UserPassword);
             int rowsAffected = await command.ExecuteNonQueryAsync();
 
             // verify that the query succeeded.
@@ -45,49 +41,49 @@ namespace RepoLayer
             {
                 // query for that new customer to return to the client the customerId
                 // call the private get a customer method to get a customer.
-                conn.Close();
+                await conn.CloseAsync();
                 return u;
             }
             else
             {
+                await conn.CloseAsync();
                 return null;
             }
         }
 
         public async Task<Users> GetUser(Users u) {
             // user ADO.NET to push the data to the DB.
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             //configure the SQL query along with the connection object
-            SqlCommand command = new SqlCommand($"SELECT * FROM Users Where Email = '@Email' AND Password = '@Password';", conn);
+            SqlCommand command = new SqlCommand($"SELECT * FROM Users Where Email = '@Email' AND UserPassword = '@UserPassword';", conn);
     
 
             //Open the Connection - you can access the SqlConnection object directly or through the SqlCommand obj!
-            command.Connection.Open();
+            // command.Connection.Open();
+            await conn.OpenAsync();
 
             // add the parameters to the query - do this to prevent Sql Injection
             command.Parameters.AddWithValue("@Email", u.Email);
-            command.Parameters.AddWithValue("@Password", u.UserPassword);
+            command.Parameters.AddWithValue("@UserPassword", u.UserPassword);
             int rowsAffected = await command.ExecuteNonQueryAsync();
 
+
+            // await conn.CloseAsync();
             return u;
         }
 
         public async Task<Tickets> CreateTicket (Tickets t){
             // user ADO.NET to push the data to the DB.
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             //configure the SQL query along with the connection object
             SqlCommand command = new SqlCommand($"INSERT INTO Tickets (TickType, TickAmount, TickDescription, TickStatus, UserID) VALUES (@TickType, @TickAmount, @TickDescription, 'Pending', @UserID);", conn);
 
             //Open the Connection - you can access the SqlConnection object directly or through the SqlCommand obj!
-            command.Connection.OpenAsync();
+            // command.Connection.OpenAsync();
+            await conn.OpenAsync();
+
 
             // add the parameters to the query - do this to prevent Sql Injection
             command.Parameters.AddWithValue("@TickType", t.TickType);
@@ -101,11 +97,12 @@ namespace RepoLayer
             {
                 // query for that new customer to return to the client the customerId
                 // call the private get a customer method to get a customer.
-                conn.Close();
+                await conn.CloseAsync();
                 return t;
             }
             else
             {
+                await conn.CloseAsync();
                 return null;
             }
         }
@@ -137,10 +134,7 @@ namespace RepoLayer
 
 
             public async Task<List<Tickets>> GetPendingTickets(){
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             SqlCommand command = new SqlCommand($"SELECT * FROM Tickets WHERE TickStatus = 'Pending'", conn);
 
@@ -158,18 +152,12 @@ namespace RepoLayer
             }
 
             public async Task<List<Tickets>> GetMyTickets(Tickets t){
-            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;" + 
-            "Initial Catalog=RevatureP1.db;Persist Security Info=False;" + 
-            "User ID=benton;Password=Faithfirst41!;" +
-            "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;)");
+            SqlConnection conn = new SqlConnection("Server=tcp:lamb41.database.windows.net,1433;Initial Catalog=RevatureP1.db;Persist Security Info=False;User ID=benton;Password=Faithfirst41!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-            SqlCommand command = new SqlCommand($"SELECT * FROM Tickets WHERE UserID = @UserID", conn);
+            SqlCommand command = new SqlCommand($"SELECT * FROM Tickets WHERE UserID = '@UserID'", conn);
 
             command.Connection.Open();
-
             command.Parameters.AddWithValue("@UserID", t.UserID);
-
-
             Task<SqlDataReader> ret = command.ExecuteReaderAsync();
 
             List<Tickets> list = new List<Tickets>();
